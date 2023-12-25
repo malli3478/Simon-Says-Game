@@ -47,6 +47,7 @@ function remflash(b) {
 document.querySelector('.start').addEventListener('click', start);
 
 function start() {
+	console.log('Game started');
 	document.querySelector('.start').setAttribute('hidden','');
 	let items = document.querySelectorAll('.item');
 	for (let item of items)
@@ -60,12 +61,12 @@ function matchSeq(i) {
 	if (userSeq[i] == gameSeq[i]) {
 		// console.log('matched')
 		if (userSeq.length == gameSeq.length) {
-			console.log(userSeq);
-			console.log(gameSeq);
+			// console.log(userSeq);
+			// console.log(gameSeq);
 			setTimeout(levelUp, 750);
 		}
 		else
-			console.log('Click next color');
+			console.log('Click next color you remember to continue...');
 	} else {
 		console.log('Game Over!');
 		let body = document.querySelector('body');
