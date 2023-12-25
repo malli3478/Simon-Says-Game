@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Simon Says Game</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<main>
+		<h1>Simon Says Game</h1>
+		<hr>
+		<div class="level" id="level"><h2>Click &quot;Start Game&quot; button to start the game.</h2></div>
+		<div class="board">
+			<div class="row1"><button class="item red" disabled id="0"><span>One</span></button>
+			<button class="item green" disabled id="1"><span>Two</span></button>
+		</div>
+			<div class="row2"><button class="item blue" disabled id="2"><span>Three</span></button>
+			<button class="item yellow" disabled id="3"><span>Four</span></button>
+		</div>
+			<button class="start" autofocus aria-describedby="level"><span>Start<br>Game</span></button>
+		</div>
+	</main>
+	<script src="app.js"></script>
+</body>
+</html>
