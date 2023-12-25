@@ -99,7 +99,9 @@ hr {
 }
 
 .start {
-	background-color: black;
+	background-color: rgba(0, 0, 0, 0.609);
+	backdrop-filter: blur(8px);
+	-webkit-backdrop-filter: blur(8px);
 	color: white;
 	font-size: 32px;
 	width: 200px;
