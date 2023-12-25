@@ -75,7 +75,7 @@ function matchSeq(i) {
 		}, 1200);
 		scores.push(level-1);
 		highest = Math.max(...scores);
-		let text = `<h2>Game Over! Your score is ${level-1}</h2> and Highest score is ${highest}`;
+		let text = `<h2>Game Over! Your score is <b>${level-1}</b></h2><p>Highest score is <b>${highest}</b></p>`;
 		document.querySelector('.level').innerHTML = text;
 		level = 0;
 		userSeq = [];
